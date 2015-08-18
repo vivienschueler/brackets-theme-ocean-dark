@@ -1,0 +1,81 @@
+/**
+ * Copyright (c) 2015 Vivien Schüler, All rights reserved.
+ * Licensed under MIT
+ **/
+
+
+
+// Color Palette
+@background: #394852;
+@foreground: #ebe5df;
+@red:        #d41f1f;
+@error:      #e62323;
+@ruby:       #962942;
+@blue:       #316a85;   
+@beige:      #ab9076;
+@lightbeige: #c8b6a5;
+
+
+//Editor Styling
+.cm-meta                    { color: @ruby;}
+.cm-error		            { color: @error; }
+.cm-tag,
+.cm-qualifier,
+.cm-builtin                 { color: @blue; }
+.cm-attribute               { color: @beige; }
+.cm-property                { color: darken(@beige, 10% ) }
+.cm-string                  { color: @lightbeige; }
+.cm-number                  { color: @ruby; }
+.cm-variable                { color: @ruby; }
+.cm-variable-3              { color: lighten(@ruby, 15% ) }
+.cm-variable-2,
+.cm-def                     { color: @blue; }
+.cm-variable-2              { font-style: italic; }
+.cm-keyword                 { color: @ruby; font-weight: 600; }
+.cm-bracket                 { color: @blue; }
+.cm-comment, .cm-plus       { color: @foreground; }
+
+
+
+.cm-matchhighlight    { border-bottom-color: @foreground; }
+.quick-view-highlight { background-color: fade(@foreground, 20%); }
+
+
+.cm-string-2, .cm-atom, .cm-header {
+    color: @lightbeige; }
+
+.CodeMirror .CodeMirror-selected {
+    background: @foreground;
+}
+.CodeMirror-focused .CodeMirror-selected  {
+    background: darken(@background, 20%);
+}
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    background-color: darken(@ruby, 15%);
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid @lightbeige !important;
+}
+
+.CodeMirror-searching {
+    background-color: @lightbeige;
+    &.searching-current-match {
+    background-color: @beige;
+    }
+}
+
+.CodeMirror-cursor {
+    color: @foreground;
+}
+
+.CodeMirror-linenumber {
+    color: @foreground;
+}
+
+.CodeMirror-scroll          { background: darken(@background, 10%); }
+
+.CodeMirror-gutters         { background-color: darken(@background, 10%); }
+
+.cm-operator,
+.CodeMirror-code pre > span { color: @foreground; }

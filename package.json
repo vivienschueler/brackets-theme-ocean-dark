@@ -1,0 +1,22 @@
+{
+    "title": "Ocean dark",
+    "name": "ocean-dark-theme",
+    "description": "A dark theme with a ocean-inspired and readable palette.",
+    "keywords": ["ocean", "dark", "theme", "brackets"],
+    "license": "MIT",
+    "version": "1.0.3",
+    "homepage": "https://github.com/vivienschueler/brackets-theme-ocean-dark",
+    "author": {
+        "name": "Vivien Schüler",
+        "url": "https://vivienschueler.com"
+    },
+    
+    "engines": {
+        "brackets": ">=1.0"
+    },
+    
+    "theme": {
+        "file": "main.less",
+        "dark": true
+    }
+}
